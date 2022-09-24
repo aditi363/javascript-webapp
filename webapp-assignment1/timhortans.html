@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <link rel="stylesheet" href="./timhortans.css">
+
+    <script src="./timhortans.js"></script>
+   
+    <title>Self Order Kiosk</title>
+</head>
+
+<body>
+    <!-- Main heading -->
+    <h1>Welcome to the Tim Hortons family</h1>
+    <div class="main">
+        <div class="left">
+            <h2>Clent-side web application of Tim Hortons</h2>
+            <table>
+                <tr>
+                    <td> <label id="lblhc">Hot Chocolate $3</label> </td>
+                    <td> <button id="hcBtn" value="hc">Add to cart</button> </td>
+                </tr>
+                <tr>
+                    <td> <label id="lblss">Steeped Tea $2</label> </td>
+                    <td> <button onsubmit="" id="ssBtn" value="steeptea">Add to cart</button> </td>
+                </tr>
+                <tr>
+                    <td> <label id="lblcc">Creamy Chill $4</label> </td>
+                    <td> <button onsubmit="" id="ccBtn" value="creamychill">Add to cart</button> </td>
+                </tr>
+                <tr>
+                    <td> <label id="lblic">Iced Capp $4</label> </td>
+                    <td> <button onsubmit="" id="icBtn" value="icedcap">Add to cart</button> </td>
+                </tr>
+                <tr>
+                    <td> <label id="lblck">Cookies $2</label> </td>
+                    <td> <button onsubmit="" id="ckBtn" value="cookies">Add to cart</button> </td>
+                </tr>
+            </table>
+            <!-- checkout button -->
+            <button name="checkout" id="checkout" onsubmit="" value="checkout">Checkout</button>
+        </div>
+        <div class="receiptDiv"> <!--receiptDev is the class here-->
+            <h2>Receipt </h2><br>
+            <h5><label id="customerName"></label></h5>
+            <table id="rTbl" name="rTbl">
+                <tr>
+                    <td><label>Hot Chocolate</label></td>
+                    <td> <label id="aplNo"></label></td>
+                    <td><label id="aplTotal"></label></td>
+                </tr>
+                <tr>
+                    <td><label>Steeped Tea</label></td>
+                    <td> <label id="ssNo"></label></td>
+                    <td><label id="ssTotal"></label></td>
+                </tr>
+                <tr>
+                    <td><label>Creamy Chill</label></td>
+                    <td> <label id="ccNo"></label></td>
+                    <td><label id="ccTotal"></label></td>
+                </tr>
+                <tr>
+                    <td><label>Iced Capp</label></td>
+                    <td> <label id="icNo"></label></td>
+                    <td><label id="icTotal"></label></td>
+                </tr>
+                <tr>
+                    <td><label>Cookies</label></td>
+                    <td> <label id="ckNo"></label></td>
+                    <td><label id="ckTotal"></label></td>
+                </tr>
+                <!-- gst -->
+                <tr>
+                    <td colspan="2"><label>GST @ 13%</label></td>
+                    <td><label id="gst"></label></td>
+                </tr>
+                <!-- Total price -->
+                <tr>
+                    <td colspan="2"><label>Total</label></td>
+                    <td><label id="total"></label></td>
+                </tr>
+            </table>
+        </div>
+        <img src="./img/download.jpeg" alt="Timis" height="350px" width="350px"></img>
+    </div><br>
+    <br>
+    <br>
+    <footer>
+        All the copyrights are reserved by &copy; Aditi Saini
+    </footer>
+</body>
+
+</html>
